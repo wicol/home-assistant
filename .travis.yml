@@ -25,7 +25,9 @@ matrix:
   #     env: TOXENV=typing
 
 cache:
+  ccache: True
   directories:
+    - $HOME/virtualenv
     - $HOME/.cache/pip
 install: pip install -U tox coveralls
 language: python
